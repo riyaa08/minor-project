@@ -208,7 +208,7 @@ span {
     height:200px;
     border-bottom: 1px solid #555;
     background-image: linear-gradient(#001709,#1a8b0b); 
-    background-image: url('upload-img.jpg');
+    background-image: url('https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/upload-img.jpg');
     background-size:100%;
     background-position:auto;
     border:2px solid green;
