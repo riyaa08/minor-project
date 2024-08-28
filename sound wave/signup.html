@@ -20,37 +20,44 @@
                     <form action="#">
                         <div class="input-boxes">
                             <div class="input-box">
+                             <i class="fas fa-user"></i>
                               <label>Username</label>
                                 <input type="text" placeholder="Enter your username" required>
                             </div>
                             <div class="input-box">
+                              <i class="fas fa-envelope"></i>
                               <label>EmailID</label>
                                 <input type="email" placeholder="Enter your email" required>
                             </div>
                             <div class="input-box">
+                             <i class="fas fa-phone"></i>
                               <label>Phone NO</label>
                                 <input type="tel" placeholder="Enter your phone no" required>
                             </div>
                             <div class="input-box">
+                             <i class="fas fa-lock"></i>
                               <label>Password</label>
                                 <input type="password" placeholder="Enter your password" required>
                             </div>
                             <div class="input-box">
+                             <i class="fas fa-lock"></i>
                               <label>Confirm Password</label>
                                 <input type="password" placeholder="Confirm your password" required>
                             </div>
                             <div class="input-box">
+                             <i class="fas fa-birthday-cake"></i>
                               <label>Birth Date</label>
                                 <input type="date" placeholder="Select your birthdate" required>
                             </div>
                             <div class="input-box">
+                             <i class="fas fa-file-image"></i>
                               <label>Select ProfilePhoto</label>
                                 <input type="file"accept="image/*" required>
                             </div>
                             <div class="button input-box">
                                 <input type="submit" value="Sign Up">
                             </div>
-                            <div class="text sign-up-text">Already have an account? <label id="login">Login now</label></div>
+                            <div class="text sign-up-text">Already have an account? <label id="submit-r">Login now</label></div>
                         </div>
                     </form>
                 </div>
@@ -132,6 +139,11 @@
   .forms .form-content .input-boxes {
     margin-top: 30px;
   }
+  .input-boxes i{
+  color:white;
+  width:35px;
+  padding-right:1px;
+}
   .forms .form-content .input-box {
     display: flex;
     align-items: center;
@@ -186,17 +198,17 @@
   }
   .input-box label{
     color:rgb(98, 211, 98);
-    width:88%;
-    font-size:22px;
+    width:85%;
+    font-size:21px;
     position: relative;
-    height:30px;
+    height:25px;
   }
-  #login {
+  #submit-r{
     color: green;
     cursor: pointer;
    font-size: 18px;
   }
-  #login:hover {
+  #submit-r:hover {
     text-decoration: underline;
   }
  
