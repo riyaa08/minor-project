@@ -10,7 +10,7 @@
   <div class="container">
     <div class="cover">
       <div class="front">
-        <img src="https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/titlebgimg.jpg" alt="">
+        <img src="titlebgimg.jpg" alt="">
       </div>
     </div>
     <div class="forms">
@@ -20,18 +20,20 @@
           <form action="#">
             <div class="input-boxes">
               <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
+                <i class="fas fa-user"></i>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
+                <label>Password</label>
                 <input type="password" placeholder="Enter your password" required>
               </div>
               <div class="text"><a href="#">Forgot password?</a></div>
               <div class="button input-box">
                 <input type="submit" value="Sumbit">
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+              <div class="text login-text">Don't have an account? <label id="submit-r">Sigup now</label></div>
             </div>
         </form>
       </div>
@@ -44,12 +46,7 @@
 
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
-}
+
 body{
   min-height: 100vh;
   display: flex;
@@ -122,13 +119,19 @@ body{
 .forms .form-content .input-boxes{
   margin-top: 30px;
 }
+.input-boxes i{
+  color:white;
+  width:35px;
+}
+
 .forms .form-content .input-box{
   display: flex;
   align-items: center;
   height: 50px;
-  width: 138%;
-  margin: 10px 0;
+  width: 110%;
+  margin: 7px 0;
   position: relative;
+  padding-bottom: 23px;
 }
 .form-content .input-box input{
   height: 100%;
@@ -145,16 +148,12 @@ body{
 .form-content .input-box input:valid{
   border-color: green;
 }
-.form-content .input-box i{
-  position: absolute;
-  color: green;
-  font-size: 17px;
-  padding-left: 10px;
-}
+
 .forms .form-content .text{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   color: white;
+  padding-top:15px;
 }
 .forms .form-content .text a{
   text-decoration: none;
@@ -178,17 +177,25 @@ body{
 .forms .form-content .button input:hover{
   background:rgb(4, 48, 4);
 }
-.forms .form-content label{
-  color: green;
-  cursor: pointer;
-}
-.forms .form-content label:hover{
-  text-decoration: underline;
-}
 .forms .form-content .login-text{
   text-align: center;
   margin-top: 25px;
 }
-
+.input-box label{
+    color:rgb(98, 211, 98);
+    width:45%;
+    font-size:22px;
+    position: relative;
+    height:25px;
+}
+  #submit-r{
+    color: green;
+    cursor: pointer;
+   font-size: 18px;
+  }
+  #submit-r:hover {
+    text-decoration: underline;
+  }
+ 
 
 </style>
