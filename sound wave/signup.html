@@ -10,7 +10,7 @@
     <div class="container">
         <div class="cover">
             <div class="front">
-                <img src="https://raw.githubusercontent.com/riyaa08/minor-project/main/sound%20wave/titlebgimg.jpg" alt="">
+                <img src="titlebgimg.jpg" alt="">
             </div>
         </div>
         <div class="forms">
@@ -20,33 +20,37 @@
                     <form action="#">
                         <div class="input-boxes">
                             <div class="input-box">
-                                <i class="fas fa-user"></i>
+                              <label>Username</label>
                                 <input type="text" placeholder="Enter your username" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-envelope"></i>
+                              <label>EmailID</label>
                                 <input type="email" placeholder="Enter your email" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-lock"></i>
+                              <label>Phone NO</label>
+                                <input type="tel" placeholder="Enter your phone no" required>
+                            </div>
+                            <div class="input-box">
+                              <label>Password</label>
                                 <input type="password" placeholder="Enter your password" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-lock"></i>
+                              <label>Confirm Password</label>
                                 <input type="password" placeholder="Confirm your password" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-calendar-alt"></i>
+                              <label>Birth Date</label>
                                 <input type="date" placeholder="Select your birthdate" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-camera"></i>
+                              <label>Select ProfilePhoto</label>
                                 <input type="file"accept="image/*" required>
                             </div>
                             <div class="button input-box">
                                 <input type="submit" value="Sign Up">
                             </div>
-                            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                            <div class="text sign-up-text">Already have an account? <label id="login">Login now</label></div>
                         </div>
                     </form>
                 </div>
@@ -67,11 +71,10 @@
   }
   .container {
     position: relative;
-    max-width: 850px;
-    width: 100%;
+    width:70%;
     background: black;
     padding: 40px 30px;
-    perspective: 2700px;
+    perspective: 2600px;
     border: 2px solid green;
   }
   .container .cover {
@@ -103,7 +106,7 @@
   }
   .container .forms {
     height: 100%;
-    width: 100%;
+    width:50%;
     background: black;
   }
   .container .form-content {
@@ -133,8 +136,8 @@
     display: flex;
     align-items: center;
     height: 37px;
-    width: 106%;
-    margin: 10px 0;
+    width: 97%;
+    margin: 15px 0;
     position: relative;
     margin-bottom: 20px;
   }
@@ -152,12 +155,6 @@
   .form-content .input-box input:focus,
   .form-content .input-box input:valid {
     border-color: green;
-  }
-  .form-content .input-box i {
-    position: absolute;
-    color: green;
-    font-size: 17px;
-    padding-left: 10px;
   }
   .forms .form-content .text {
     font-size: 14px;
@@ -187,12 +184,19 @@
   .forms .form-content .button input:hover {
     background: rgb(4, 48, 4);
   }
-  .forms .form-content label {
+  .input-box label{
+    color:rgb(98, 211, 98);
+    width:88%;
+    font-size:22px;
+    position: relative;
+    height:30px;
+  }
+  #login {
     color: green;
     cursor: pointer;
-   font-size:  20px;
+   font-size: 18px;
   }
-  .forms .form-content label:hover {
+  #login:hover {
     text-decoration: underline;
   }
  
